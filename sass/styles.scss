@@ -17,6 +17,21 @@ body {
   margin: 0;
   text-align: center;
 }
+.media {
+  width: ($button-size * 3) + 300;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (max-width: $break) {
+    width: ($button-small * 3) + 300;
+  }
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.button.hidden {
+  visibility: hidden;
+}
 .button {
   display: inline-block;
   position: relative;
